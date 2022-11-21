@@ -1,0 +1,35 @@
+// Colors
+$color-bg-intro-blue: #1c2431;
+$color-bg-main-blue: #181f2a;
+$color-bg-footer-blue: #0b1523;
+$color-bg-testimonials-blue: #202a3c;
+$color-cta-cyan-gradient: #65e2d9;
+$color-cta-blue-gradient: #339ecc;
+$color-red: #ff4242;
+$color-white: #ffffff;
+
+// Media
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", "Raleway", sans-serif;
+}

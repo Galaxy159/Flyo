@@ -3,7 +3,7 @@ import Topbar from "./components/Topbar";
 import Header from "./components/Header";
 import Features from "./components/Features";
 import Content from "./components/Content";
-import Feedback from "./components/Feedback";
+import Testimonials from "./components/Testimonials";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
 import Footer2 from "./components/Footer2";
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Features />
         <Content />
-        <Feedback />
+        <Testimonials />
         <Cta />
         <Footer />
       </main>
