@@ -1,0 +1,57 @@
+.cta {
+  max-width: 33.6rem;
+  margin: 0 auto;
+  padding: 4rem 2.8rem 3.7rem;
+  border-radius: 0.9rem;
+  background-color: $color-bg-intro-blue;
+  transform: translateY(50%);
+  &__headline {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__submit {
+    display: grid;
+
+    &--input {
+      height: 4.8rem;
+      max-width: 28rem;
+      padding: 1.9rem 0 1.5rem 2.9rem;
+      border: none;
+      border-radius: 2.4rem;
+      margin-bottom: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    &--btn {
+      height: 4.8rem;
+      max-width: 28rem;
+    }
+
+    &--error {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      color: $color-red;
+      margin-bottom: 0.5rem;
+      text-align: left;
+      padding-left: 2.9rem;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
+}
+
+.show {
+  opacity: 1;
+}

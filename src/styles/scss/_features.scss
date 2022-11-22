@@ -1,0 +1,23 @@
+.features {
+  display: grid;
+  gap: 8rem;
+  max-width: 32rem;
+  margin: 0 auto 16rem;
+  &__item {
+    &--icon {
+      height: 8rem;
+      margin-bottom: 2.4rem;
+    }
+    &--headline {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      margin-bottom: 0.8rem;
+    }
+    &--text {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+  }
+}

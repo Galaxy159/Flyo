@@ -1,7 +1,9 @@
 import productive from "../images/illustration-stay-productive.png";
 import arrow from "../images/icon-arrow.svg";
+import { useState } from "react";
 
 export default function Content() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <div className="content">
@@ -20,18 +22,25 @@ export default function Content() {
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
           </p>
-          <p className="content__content--text2">
+          <p className="content__content--text">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <a href="0#" className="content__content--link">
-            See how Fylo works{" "}
-            <span>
-              <svg style={{ height: "16px", width: "16px", fill: "white" }}>
-                <use xlinkHref={`${arrow}#arrow`}></use>
-              </svg>
-            </span>
-          </a>
+          <div
+            className="content__content--cta"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <a href="0#" className="content__content--cta-link">
+              See how Fylo works{" "}
+            </a>
+            <svg
+              className="content__content--cta-icon"
+              style={isHovered ? { fill: "white" } : {}}
+            >
+              <use xlinkHref={`${arrow}#arrow`}></use>
+            </svg>
+          </div>
         </div>
       </div>
     </>

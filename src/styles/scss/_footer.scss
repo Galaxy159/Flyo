@@ -1,0 +1,102 @@
+.footer {
+  padding: 26rem 0 5.2rem 2.8rem;
+  background-color: $color-bg-footer-blue;
+  padding-top: 26rem;
+  text-align: left;
+
+  &__logo {
+    padding-left: 1.1rem;
+    margin-bottom: 3.6rem;
+    &--img {
+      height: 3.1rem;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    margin-bottom: 5.9rem;
+    gap: 1.6rem;
+    &--location {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      gap: 2.763rem;
+      &-icon {
+        transform: translateY(0.75rem);
+      }
+      &-info {
+        max-width: 27.9rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+    &--phone {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      gap: 2.763rem;
+
+      &-info {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+      }
+    }
+    &--email {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      gap: 2.763rem;
+
+      &-info {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+      }
+    }
+  }
+
+  &__nav {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 5.6rem;
+
+    & a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+    &--col1 {
+      display: grid;
+      gap: 1.6rem;
+      margin-bottom: 4.85rem;
+    }
+    &--col2 {
+      display: grid;
+      gap: 1.6rem;
+    }
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 1rem;
+    justify-content: center;
+    transform: translateX(-1.4rem);
+    &--icon {
+      cursor: pointer;
+      height: 2.7rem;
+      width: 2.7rem;
+      border: 1px solid $color-white;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+      &:hover {
+        color: $color-cta-cyan-gradient;
+        border: 1px solid $color-cta-cyan-gradient;
+        transition: all 0.2s;
+      }
+    }
+  }
+}

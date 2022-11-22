@@ -1,9 +1,13 @@
 import hero from "../images/illustration-intro.png";
+import bg from "../images/bg-curvy-mobile.svg";
 
 export default function Header() {
   return (
     <>
       <header className="header">
+        <div className="header__bg-pattern">
+          <img src={bg} alt="" className="header__bg-pattern--img" />
+        </div>
         <div className="header__hero">
           <img src={hero} alt="Hero" className="header__hero--img" />
         </div>
@@ -15,7 +19,7 @@ export default function Header() {
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <button className="header__btn">Get Started</button>
+        <button className="header__btn btn">Get Started</button>
       </header>
     </>
   );

@@ -1,0 +1,57 @@
+.content {
+  max-width: 32rem;
+  margin: 0 auto 16rem;
+  &__hero {
+    margin-bottom: 4.8rem;
+    &--img {
+      height: 23rem;
+    }
+  }
+  &__content {
+    display: grid;
+    gap: 1.6rem;
+    text-align: left;
+    &--headline {
+    }
+    &--text {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+
+    &--cta {
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: max-content min-content;
+      gap: 0.7rem;
+      max-width: 13rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid $color-cta-cyan-gradient;
+      color: $color-cta-cyan-gradient;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-white;
+        border-bottom: 1px solid $color-white;
+      }
+
+      &-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        height: 1.2rem;
+        &:link,
+        &:visited {
+          color: inherit;
+        }
+      }
+      &-icon {
+        height: 16px;
+        width: 16px;
+        fill: $color-cta-cyan-gradient;
+        transition: all 0.2s;
+      }
+    }
+  }
+}

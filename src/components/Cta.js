@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 export default function Cta() {
+  const [isValid, setIsValid] = useState(true);
+  const [inputVal, setInputVal] = useState("");
+  const validateEmail = function (email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   return (
     <>
       <div className="cta">
@@ -10,11 +19,24 @@ export default function Cta() {
         </p>
         <div className="cta__submit">
           <input
+            onChange={(e) => setInputVal(e.target.value)}
             type="text"
             placeholder="email@example.com"
             className="cta__submit--input"
           />
-          <button className="cta__submit--btn">Get Started For Free</button>
+          <p
+            className={
+              isValid ? "cta__submit--error" : "cta__submit--error show"
+            }
+          >
+            Error, please check your email
+          </p>
+          <button
+            onClick={() => setIsValid(validateEmail(inputVal))}
+            className="cta__submit--btn btn"
+          >
+            Get Started For Free
+          </button>
         </div>
       </div>
     </>

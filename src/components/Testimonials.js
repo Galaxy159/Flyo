@@ -11,7 +11,7 @@ export default function Testimonials() {
           <img
             src={quotation}
             alt="Quotation mark"
-            className="quotation__img"
+            className="testimonials__quotation--img"
           />
         </div>
         <div className="testimonials__content">

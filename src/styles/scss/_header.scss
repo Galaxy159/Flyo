@@ -1,0 +1,40 @@
+.header {
+  background: linear-gradient(
+    180deg,
+    $color-bg-intro-blue 93%,
+    $color-bg-main-blue 0%
+  );
+  background-repeat: no-repeat;
+  background-position: bottom 19.5rem right 0;
+  margin-bottom: 12rem;
+  position: relative;
+
+  &__bg-pattern {
+    position: absolute;
+    top: 18.5rem;
+  }
+
+  &__hero {
+    padding-bottom: 3.3rem;
+    position: relative;
+    &--img {
+      height: 22.5rem;
+    }
+  }
+  &__headline {
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+    position: relative;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    max-width: 29.6rem;
+    margin: 0 auto 3.2rem;
+  }
+  &__btn {
+    width: 24rem;
+    height: 4.8rem;
+  }
+}
