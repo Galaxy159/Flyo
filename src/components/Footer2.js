@@ -2,7 +2,7 @@ export default function Footer2() {
   return (
     <>
       <footer>
-        <p class="attribution">
+        <p className="attribution">
           Challenge by{" "}
           <a
             href="https://www.frontendmentor.io?ref=challenge"

@@ -31,5 +31,54 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: $color-bg-main-blue;
+  color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  @include respond(desktop) {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  @include respond(desktop) {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  @include respond(desktop) {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  @include respond(desktop) {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
 }
