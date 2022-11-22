@@ -236,7 +236,7 @@ h4 {
 }
 
 .testimonials {
-  margin-bottom: 16rem;
+  margin-bottom: -1.7rem;
 }
 .testimonials__quotation {
   transform: translate(-12.2rem, 0.6rem);
@@ -448,6 +448,9 @@ h4 {
 }
 
 .attribution {
+  background-color: #0b1523;
+  margin: 0 auto;
+  max-width: 37.5rem;
   font-size: 11px;
   text-align: center;
 }
