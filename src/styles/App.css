@@ -120,17 +120,17 @@ h4 {
     height: 5.1rem;
   }
 }
-.topbar__nav {
+.topbar__links {
   display: grid;
   grid-template-columns: 5.2rem 3.2rem 4rem;
   gap: 2.4rem;
 }
 @media (min-width: 1360px) {
-  .topbar__nav {
+  .topbar__links {
     grid-template-columns: 7rem 5rem 6rem;
   }
 }
-.topbar__nav--link {
+.topbar__links--link {
   display: grid;
   align-items: center;
   height: 2.6rem;
@@ -141,12 +141,12 @@ h4 {
   font-weight: 400;
 }
 @media (min-width: 1360px) {
-  .topbar__nav--link {
+  .topbar__links--link {
     font-size: 1.6rem;
     line-height: 1.9rem;
   }
 }
-.topbar__nav--link:hover {
+.topbar__links--link:hover {
   font-weight: 700;
   border-bottom: 1px solid #ffffff;
 }

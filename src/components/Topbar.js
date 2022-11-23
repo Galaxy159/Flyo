@@ -7,14 +7,14 @@ export default function Topbar() {
         <div className="topbar__logo">
           <img src={logo} alt="Logo" className="topbar__logo--img" />
         </div>
-        <nav className="topbar__nav">
-          <a href="#0" className="topbar__nav--link">
+        <nav className="topbar__links">
+          <a href="#0" className="topbar__links--link">
             Features
           </a>
-          <a href="#0" className="topbar__nav--link">
+          <a href="#0" className="topbar__links--link">
             Team
           </a>
-          <a href="#0" className="topbar__nav--link">
+          <a href="#0" className="topbar__links--link">
             Sign In
           </a>
         </nav>
