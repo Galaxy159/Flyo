@@ -26,9 +26,9 @@
 
     @include respond(desktop) {
       grid-template-rows: repeat(4, min-content);
+      max-width: 50rem;
     }
-    &--headline {
-    }
+
     &--text {
       font-weight: 400;
       font-size: 1.4rem;
