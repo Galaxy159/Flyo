@@ -4,6 +4,9 @@
   max-width: 37.5rem;
   font-size: 11px;
   text-align: center;
+  @include respond(desktop) {
+    max-width: 144rem;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

@@ -1,9 +1,19 @@
 .testimonials {
   margin-bottom: -1.7rem;
+  @include respond(desktop) {
+    margin-bottom: 4.2rem;
+  }
   &__quotation {
     transform: translate(-12.2rem, 0.6rem);
+    @include respond(desktop) {
+      transform: translate(-56.7rem, 1.3rem);
+    }
     &--img {
       height: 2rem;
+
+      @include respond(desktop) {
+        height: 5rem;
+      }
     }
   }
   &__content {
@@ -11,6 +21,12 @@
     max-width: 28rem;
     display: grid;
     row-gap: 2.4rem;
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 118rem;
+      column-gap: 4rem;
+    }
   }
   &__item {
     z-index: 2;
@@ -18,11 +34,21 @@
     background-color: $color-bg-testimonials-blue;
     padding: 2.4rem 2rem 2.1rem;
     border-radius: 0.4rem;
+
+    @include respond(desktop) {
+      max-width: 36rem;
+      padding: 4rem 2.47rem 2.6rem 2.6rem;
+    }
     &--text {
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.8rem;
       margin-bottom: 1.7rem;
+      @include respond(desktop) {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.5px;
+      }
     }
     &--person {
       display: grid;

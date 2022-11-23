@@ -1,8 +1,17 @@
 .features {
+  position: relative;
   display: grid;
   gap: 8rem;
   max-width: 32rem;
   margin: 0 auto 16rem;
+
+  @include respond(desktop) {
+    max-width: 88rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16.8rem;
+    row-gap: 7.9rem;
+    margin-bottom: 13.737;
+  }
   &__item {
     &--icon {
       height: 8rem;

@@ -9,9 +9,18 @@
   margin-bottom: 12rem;
   position: relative;
 
+  @include respond(desktop) {
+    background: $color-bg-intro-blue;
+    margin-bottom: 0;
+    padding-bottom: 15.8rem;
+  }
+
   &__bg-pattern {
     position: absolute;
     top: 18.5rem;
+    @include respond(desktop) {
+      top: 62.5rem;
+    }
   }
 
   &__hero {
@@ -19,22 +28,41 @@
     position: relative;
     &--img {
       height: 22.5rem;
+
+      @include respond(desktop) {
+        height: 53.4rem;
+      }
     }
   }
   &__headline {
     max-width: 32rem;
     margin: 0 auto 1.5rem;
     position: relative;
+    @include respond(desktop) {
+      margin-bottom: 3.2rem;
+      max-width: 73.4rem;
+    }
   }
   &__text {
+    position: relative;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.1rem;
     max-width: 29.6rem;
     margin: 0 auto 3.2rem;
+
+    @include respond(desktop) {
+      font-size: 2rem;
+      line-height: 3rem;
+      max-width: 58.9rem;
+    }
   }
   &__btn {
-    width: 24rem;
+    max-width: 24rem;
     height: 4.8rem;
+    @include respond(desktop) {
+      height: 5.6rem;
+      max-width: 28rem;
+    }
   }
 }

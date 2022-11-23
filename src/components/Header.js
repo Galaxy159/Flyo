@@ -1,12 +1,16 @@
 import hero from "../images/illustration-intro.png";
 import bg from "../images/bg-curvy-mobile.svg";
+import bgDesktop from "../images/bg-curvy-desktop.svg";
 
 export default function Header() {
   return (
     <>
       <header className="header">
         <div className="header__bg-pattern">
-          <img src={bg} alt="" className="header__bg-pattern--img" />
+          <picture>
+            <source media="(min-width: 1180px)" srcSet={bgDesktop} />
+            <img src={bg} alt="" className="header__bg-pattern--img" />
+          </picture>
         </div>
         <div className="header__hero">
           <img src={hero} alt="Hero" className="header__hero--img" />
