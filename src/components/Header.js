@@ -8,7 +8,7 @@ export default function Header() {
       <header className="header">
         <div className="header__bg-pattern">
           <picture>
-            <source media="(min-width: 1180px)" srcSet={bgDesktop} />
+            <source media="(min-width: 1360px)" srcSet={bgDesktop} />
             <img src={bg} alt="" className="header__bg-pattern--img" />
           </picture>
         </div>
