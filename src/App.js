@@ -6,7 +6,7 @@ import Content from "./components/Content";
 import Testimonials from "./components/Testimonials";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
-import Footer2 from "./components/Footer2";
+// import Footer2 from "./components/Footer2";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Cta />
         <Footer />
       </main>
-      <Footer2 />
+      {/* <Footer2 /> */}
     </>
   );
 }
