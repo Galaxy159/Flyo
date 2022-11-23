@@ -11,7 +11,7 @@ export default function Cta() {
   return (
     <>
       <div className="cta">
-        <h3 className="cta__headline">Get early access today</h3>
+        <h4 className="cta__headline">Get early access today</h4>
         <p className="cta__text">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would

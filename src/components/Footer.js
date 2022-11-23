@@ -53,29 +53,29 @@ export default function Footer() {
                 <p className="footer__contact--email-info">example@fylo.com</p>
               </div>
             </div>
-            <nav className="footer__nav">
-              <div className="footer__nav--col1">
-                <a href="#0" className="footer__nav--col1-link">
+            <nav className="footer__links">
+              <div className="footer__links--col1">
+                <a href="#0" className="footer__links--col1-link">
                   About Us
                 </a>
-                <a href="#0" className="footer__nav--col1-link">
+                <a href="#0" className="footer__links--col1-link">
                   Jobs
                 </a>
-                <a href="#0" className="footer__nav--col1-link">
+                <a href="#0" className="footer__links--col1-link">
                   Press
                 </a>
-                <a href="#0" className="footer__nav--col1-link">
+                <a href="#0" className="footer__links--col1-link">
                   Blog
                 </a>
               </div>
-              <div className="footer__nav--col2">
-                <a href="#0" className="footer__nav--col2-link">
+              <div className="footer__links--col2">
+                <a href="#0" className="footer__links--col2-link">
                   Contact Us
                 </a>
-                <a href="#0" className="footer__nav--col2-link">
+                <a href="#0" className="footer__links--col2-link">
                   Terms
                 </a>
-                <a href="#0" className="footer__nav--col2-link">
+                <a href="#0" className="footer__links--col2-link">
                   Privacy
                 </a>
               </div>

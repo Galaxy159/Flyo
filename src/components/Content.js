@@ -15,9 +15,9 @@ export default function Content() {
           />
         </div>
         <div className="content__content">
-          <h2 className="content__content--headline">
+          <h3 className="content__content--headline">
             Stay productive, wherever you are
-          </h2>
+          </h3>
           <p className="content__content--text">
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.

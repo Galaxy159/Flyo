@@ -35,7 +35,7 @@
       grid-template-columns: repeat(2, max-content);
       grid-template-rows: repeat(2, min-content);
       column-gap: 8rem;
-      margin-right: 14.6rem;
+      margin: 0 14.6rem 0 0;
     }
     &--location {
       display: grid;
@@ -83,7 +83,7 @@
     }
   }
 
-  &__nav {
+  &__links {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.2rem;
@@ -93,8 +93,7 @@
       display: grid;
       grid-template-columns: 8rem 9rem;
       column-gap: 8rem;
-      margin-right: 11.4rem;
-      margin-bottom: 100%;
+      margin: 0 11.4rem 0 0;
     }
 
     & a {
@@ -109,6 +108,9 @@
       display: grid;
       gap: 1.6rem;
       margin-bottom: 4.85rem;
+      @include respond(desktop) {
+        margin: 0;
+      }
     }
     &--col2 {
       display: grid;

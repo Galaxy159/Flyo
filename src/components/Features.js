@@ -9,9 +9,9 @@ export default function Features() {
       <div className="features">
         <div className="features__item">
           <img src={access} alt="Access" className="features__item--icon" />
-          <h4 className="features__item--headline">
+          <h2 className="features__item--headline">
             Access your files, anywhere
-          </h4>
+          </h2>
           <p className="features__item--text">
             The ability to use a smartphone, tablet, or computer to access your
             account means your files follow you everywhere.
@@ -19,7 +19,7 @@ export default function Features() {
         </div>
         <div className="features__item">
           <img src={security} alt="Security" className="features__item--icon" />
-          <h4 className="features__item--headline">Security you can trust</h4>
+          <h2 className="features__item--headline">Security you can trust</h2>
           <p className="features__item--text">
             2-factor authentication and user-controlled encryption are just a
             couple of the security features we allow to help secure your files.
@@ -31,7 +31,7 @@ export default function Features() {
             alt="Collaboration"
             className="features__item--icon"
           />
-          <h4 className="features__item--headline">Real-time collaboration</h4>
+          <h2 className="features__item--headline">Real-time collaboration</h2>
           <p className="features__item--text">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
@@ -39,7 +39,7 @@ export default function Features() {
         </div>
         <div className="features__item">
           <img src={anyFile} alt="Any file" className="features__item--icon" />
-          <h4 className="features__item--headline">Store any type of file</h4>
+          <h2 className="features__item--headline">Store any type of file</h2>
           <p className="features__item--text">
             Whether you're sharing holidays photos or work documents, Fylo has
             you covered allowing for all file types to be securely stored and
